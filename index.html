@@ -8,14 +8,16 @@
 			the_text2 = "</a></div><div class=\"result_list_txt timeStart\">"
 			the_text3 = "</div><div class=\"result_list_txt timeEnd\">"
 			the_text4 = "</div><div class=\"result_list_txt submitStatus\"><label>期限内提出</label></div><div class=\"result_list_txt\"></div><input class=\"reportId\" type=\"hidden\" ><input class=\"idnumber\" type=\"hidden\"></div>";
-		    if ((window.innerHeight + window.scrollY) + 1000 >= document.body.offsetHeight) {
-		    	random_date1 = new Date(+(new Date()) - Math.floor(Math.random()*10000000000));
-		    	random_date1_formatted = dateFormat(random_date1, "yyyy/mm/dd hh:MM").toString();
-		    	random_date2 = new Date(+(new Date()) - Math.floor(Math.random()*10000000000));
-		    	random_date2_formatted = dateFormat(random_date2, "yyyy/mm/dd hh:MM").toString();
-		    	myArray = ['小テスト', '課題', 'レポート'];
-		    	random_name = myArray[Math.floor(Math.random() * myArray.length)];
-		    	document.getElementById('lmfaolmfao').innerHTML += the_text1 + random_name + the_text2 + random_date1_formatted + the_text3 + random_date2_formatted + the_text4 ;
+		    if ((window.innerHeight + window.scrollY) + 10000 >= document.body.offsetHeight) {
+		    	for (i = 0; i < 10; i++) {
+			    	random_date1 = new Date(+(new Date()) - Math.floor(Math.random()*10000000000));
+			    	random_date1_formatted = dateFormat(random_date1, "yyyy/mm/dd hh:MM").toString();
+			    	random_date2 = new Date(+(new Date()) - Math.floor(Math.random()*10000000000));
+			    	random_date2_formatted = dateFormat(random_date2, "yyyy/mm/dd hh:MM").toString();
+			    	myArray = ['小テスト', '課題', 'レポート'];
+			    	random_name = myArray[Math.floor(Math.random() * myArray.length)];
+			    	document.getElementById('lmfaolmfao').innerHTML += the_text1 + random_name + the_text2 + random_date1_formatted + the_text3 + random_date2_formatted + the_text4 ;
+			    }
 		    }
 		};
 	</script>
